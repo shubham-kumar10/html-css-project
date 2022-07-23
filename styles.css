@@ -1,0 +1,47 @@
+ul {
+  display: flex;
+  flex-direction: row;
+}
+
+li {
+  display: flex;
+  width: 200px;
+  height: 200px;
+  background-color: lavender;
+  border: 1px solid black;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+}
+
+/* styles will be applied to all sizes till 480px 
+@media screen and (max-width: 480px) {
+     ul {
+         flex-direction: column;
+     }
+}
+*/
+
+/* styles will be applied to all sizes starting from 480px  */
+@media screen and (min-width: 480px) {
+    ul {
+        flex-direction: column;
+    }
+
+    li {
+        background-color: orangered;
+    }
+}
+
+
+/* @media - CSS at-rule
+
+CLASS - . selector
+ID - # selector
+
+@import - fonts 
+@media - responsive
+
+
+*/
